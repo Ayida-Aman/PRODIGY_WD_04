@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+*{
+    /* padding: 0 5px; */
+    margin: 0;
+    background-color: #f0ebeb;
+    opacity: 2;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    padding: 10px 0 0 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: grey;
+}
+.links a, .links{
+    margin: 0 7px;
+    /* color: white; */
+    color: black;
+    background-color: grey;
+
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    font-family: Caveat;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+    margin-top: -10px;
+    background-color: grey;
+}
+.links a:hover, .links:hover{
+    color: rgb(223, 26, 59);
+}
+.nav button{
+    margin-top: -6px;
+    height: 35px;
+    border: 2px solid rgb(105, 100, 100);
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 5px;
+    width: 150px;
+    background-color: grey;
+
+}
+.nav a{
+    background-color: grey;
+
+}
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+  }
+  .nav #toggler{
+    display: none;
+}
+.nav .fa-bars {
+    font-size: 1.5rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+ /* styling the home page */
+
+.home-image img{
+    height: 300px;
+    width: 300px;
+    margin-left: -100px;
+    margin-top: 90%;
+    margin-right: 40px;
+    border-radius: 50%;
+    transition: all 1s;
+ }
+ .home-image:hover img,.about-image:hover img{
+    bottom: 40px;
+    transform: translate(-50px);
+}
+#home{
+    display: flex;
+    top: 35px;
+    /* position: relative; */
+    justify-content: center;
+    height: fit-content;
+}
+.home-body{
+    margin-top: 250px;
+}
+.home-body p{
+    color: rgb(105, 100, 100);
+    margin: 10px;
+}
+.home-body h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+}
+.home-body span{
+    color: rgb(223, 26, 59);
+}
+.home-body button, .home-body #download-btn {
+    height: 35px;
+    border: 2px solid rgb(105, 100, 100);
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 5px;
+    margin: 5px;
+}
+.home-body button:hover , .nav button:hover, .home-body #download-btn:hover{
+    color: white;
+    background-color: rgb(223, 26, 59);
+    border: none;
+}
+.home-body a{
+    color: rgb(105, 100, 100);
+    font-size: 30px;
+    margin: 0 10px;
+}
+.home-body a:hover{
+    color: rgb(223, 26, 59);
+}
+
+/* styling the about page */
+
+#about{
+    margin-top: 40px;
+}
+#about h1{
+    text-align: center;
+    border-bottom: 3px grey solid;
+    margin: 0 650px;
+    padding: 15px;
+}
+.about{
+    display: flex;
+    justify-content: center;
+}
+.about .about-body{
+    margin-top: 50px;
+    width: 500px;
+}
+.about-image img{
+    transition: all 1s;
+    height: 250px;
+    margin-top: 30px;
+    margin-right: 50px;
+    border-radius: 30%;
+    width: 250px;
+}
+
+/* styling the experience page */
+
+#experience h1{
+    text-align: center;
+    border-bottom: 3px grey solid;
+    margin: 0 650px;
+    padding: 15px;
+}
+.blured{
+    text-align: center;
+    color: rgb(105, 100, 100);
+    margin-top: 50px;
+}
+.experience{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    margin: 50px 0 0 0;
+    border: 2px rgb(223, 26, 59) solid;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgb(150, 145, 145);
+}
+.card h2{
+    text-align: center;
+}
+.lists{
+    display: flex;
+}
+
+/* styling the projects page */
+
+#projects{
+    margin-top: 70px;
+}
+#projects h1{
+    text-align: center;
+    border-bottom: 3px grey solid;
+    margin: 10px 650px;
+    padding: 15px;
+}
+.projects{
+    display: flex;
+    justify-content: space-around;
+}
+.projects-card{
+    border: none;
+    height: fit-content;
+    transition: all 1s;
+}
+.projects-card:hover{
+    transform: scale(1.1);
+}
+.projects-card h2 span{
+    color: rgb(223, 26, 59);
+}
+.projects-card button{
+    border: none;
+    background-color: grey;
+    height: 35px;
+    width: 130px;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+.projects-card button:hover{
+    border: 3px rgb(223, 26, 59) solid;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+}
+.buttons{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin: 20px 0 20px 60px;
+}
+
+/* styling the hire me page */
+
+.hire{
+    margin-top: 50px;
+    z-index: 1;
+}
+.hire h1{
+    text-align: center;
+    border-bottom: 3px grey solid;
+    margin: 10px 650px;
+    padding: 15px;
+}
+.hire-heading{
+    border-bottom: none;
+    width: 400px;
+    margin-left: 540px;
+    text-align: center;
+    padding: 15px;
+}
+.contact{
+    text-align: center;
+    border: 3px solid rgb(223, 26, 59);
+    width: fit-content;
+    margin-left: 620px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+.footer{
+    margin: 50px 0 10px 630px;
+    gap: 20px;
+}
+.footer a{
+    background-color: transparent;
+}
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .nav .fa-bars{
+        display: block;
+    }
+    .nav .links{
+        position: absolute;
+        top: 44px;
+        left: 0;
+        margin-left: 0;
+        background-color: transparent;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        width: 100%;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 1s;
+    }
+    .nav #toggler:checked ~ .links{
+        clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);
+    }
+    .nav .links a{
+        margin: 1.5 rem;
+        padding: 1.5rem;
+        background-color: pink;
+        border: .1rem solid rgba(0, 0, 0, .1);
+        display: block;
+    }
+    .home-image img{
+        height: 300px;
+        width: 300px;
+        top: 170px;
+        position: relative;
+    }
+    #about h1, #experience h1, #projects h1, #hire h1{
+        margin: 0 -650px;
+        margin: 0 250px;
+    }
+    .about-image img{
+        height: 400px;
+        width: 200px;
+        margin-right: -50px;
+        top: 50px;
+        position: relative;
+    }
+    .about-body{
+        width: 200px;
+        z-index: 1;
+        margin-top: -100px;
+        padding: 0 0 0 50px;
+    }
+    #experience .blured{
+        margin-top: 50px;
+    }
+    .card{
+        width: 40%;
+    }
+    .projects{
+        flex-direction: column;
+    }
+    .projects-card{
+        width: fit-content;
+        align-self: center;
+    }
+    .hire-heading{
+        margin: 0 100px 0 150px;
+    }
+    .contact{
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .footer{
+        margin: 50px 0 20px 200px;
+    }
+}
+@media (max-width: 600px){
+    .home-image img{
+        height: 400px;
+        width: 400px;
+        margin-left: 50px;
+     }
+    #home{
+        display: flex;
+        top: 35px;
+        /* position: relative; */
+        justify-content: center;
+        height: 600px;
+        flex-direction: column;
+    }
+    .home-body{
+        margin-top: 150px;
+        text-align: center;
+        z-index: 1;
+        margin-bottom: 120px;
+    }
+    #about h1, #experience h1, #projects h1, #hire h1{
+        /* margin: 0 -50px; */
+        margin: 0 170px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-image img{
+        height: 400px;
+        width: 400px;
+        margin: 0px 0 -30px 50px;
+    }
+    .about-body{
+        width: 300px;
+        z-index: 1;
+        margin-top: -100px;
+    }
+    .experience{
+        flex-direction: column;
+    }
+    .experience .card{
+        width: 70%;
+        align-self: center;
+    }
+    .hire-heading{
+        margin: 0 100px 0 50px;
+    }
+    .contact{
+        margin-left: 110px;
+    }
+    .footer{
+        margin: 50px 0 20px 135px;
+    }
+}
